@@ -16,3 +16,4 @@ console.log(null>=0);
 
 console.log(2==="2");   //False
 
+// The best practice is to not compare two values with different data types
