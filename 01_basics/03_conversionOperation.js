@@ -36,3 +36,36 @@ let someNumber = 33
 let stringNumber = String(someNumber)
 console.log(stringNumber);
 console.log(typeof stringNumber);
+
+// **************Operations**************
+
+let value = 3
+let negValue = -value
+console.log(negValue);
+
+// Basic Arithmetic Operations (+,-,/,*,**,%)
+
+let str1 = "Hitesh"
+let str2 = " hitesh"
+
+let str3 = str1+str2
+console.log(str3);
+
+console.log(1+"2"); 
+console.log("1"+2);
+console.log("1"+"2");
+// All the 3 above console logs result in 12.
+
+console.log(1+2+"2"); //Output: 32
+console.log("1"+2+2); //Output: 122
+
+// All of this is derived from the ECMA standards
+
+// Prefix and Postfix Increment
+
+let gameCounter = 100;
+gameCounter++;
+console.log(gameCounter);
+
+
+
