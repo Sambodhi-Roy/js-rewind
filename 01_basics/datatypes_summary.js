@@ -54,3 +54,29 @@ console.log(typeof myFunction);
 // String - "string"
 // Object/Arrays - "object"
 // Function - "function"
+
+// ------------------------------------------------
+
+// Stack Memory -> Primitive (You get a Copy)
+// Heap Memory -> Non-Primitive (You get a Reference)
+
+let myYoutubeName = "samroydotcom"
+
+let anotherName = myYoutubeName
+anotherName = "justAchannel"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+// We change the copied value of the variable
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "sam@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
