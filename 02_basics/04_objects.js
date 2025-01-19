@@ -76,3 +76,44 @@ console.log(Object.entries(tinderUser));
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 // Returns a boolean if a particular property exists or not in the object
 
+// DESTRUCTURING an object
+
+const course = {
+    courseName: "JS in Hindi",
+    price: "999",
+    courseInstructor: "Chai aur Code"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course
+console.log(instructor);
+
+// Example of how destructuring is used in react
+
+/*
+const navbar = ({company}) => {
+
+}
+
+navbar(company="sam")
+*/
+
+/*
+BASIC STRUCTURE OF a JSON -> Like an unnamed object, usually both the key and value is a string
+
+
+{
+    "name": "Chai aur Code",
+    "courseName": "JS in Hindi",
+    "price": "free"
+}
+
+Another structure of JSON -> An array of objects
+
+[
+    {},
+    {},
+    {}
+]
+*/
