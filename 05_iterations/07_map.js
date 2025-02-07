@@ -4,4 +4,13 @@ const newNums = myNums.map( (num) => num+10)
 console.log(newNums);
 
 // Map also takes in a callback function.
+// Filter works for true/false stuff.
 
+// Chaining - Attach one or more methods to one another
+
+const newNumsChain = myNums
+                .map((num) => num+10)
+                .map( (num) => num+1)
+                .filter( (num) => num>=10)
+
+console.log(newNumsChain);
