@@ -101,3 +101,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
     console.log(data);
 })
 .catch((error) => console.log(error))
+
+// Note: If we get returned with a status 404 from a fetch, is it resolve or reject?
+
+// The fetch() function will reject the promise on some errors, but not if the server responds with an error status like 404: so we also check the response status and throw if it is not OK. 
